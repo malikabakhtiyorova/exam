@@ -1,6 +1,25 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+  url('../fonts/ProductSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url('../fonts/ProductSans-Bold.woff2') format('woff2'),
+  url('../fonts/ProductSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -9,7 +28,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Product sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -31,8 +50,66 @@ img {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1148px;
+  padding: 0 24px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 50px;
+}
+
+/* HEADER */
+.site-header {
+  position: fixed;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 59px;
+  height: 20px;
+  display: inline-block;
+}
+
+.site-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: none;
+  padding: none;
+}
+
+.sitenav-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 32px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+}
+
+nav + a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #00BAFC;
+  border-radius: 5px;
 }
