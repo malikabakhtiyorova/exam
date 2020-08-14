@@ -420,3 +420,37 @@ main {
   margin-bottom: 20px;
   padding: 15px;
 }
+
+footer {
+  background-color: #191919;
+  color: #fff;
+  padding: 50px 0 100px 0;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-right {
+  width: 320px;
+  margin-right: 100px;
+}
+
+.footer-ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-list {
+  margin-left: 70px;
+}
+
+.footer h4 {
+  font-size: 18px;
+}
